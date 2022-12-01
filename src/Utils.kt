@@ -1,3 +1,5 @@
+package utils
+
 import java.io.File
 import java.math.BigInteger
 import java.security.MessageDigest
@@ -5,8 +7,12 @@ import java.security.MessageDigest
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String) = File("src", "$name.txt")
+fun readInput(name: String) = File("src/inputs", "$name.txt")
     .readLines()
+
+fun splitInput(name: String) = File("src/inputs", "$name.txt")
+    .readText()
+    .split("\n\n")
 
 /**
  * Converts string to md5 hash.
