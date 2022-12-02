@@ -7,5 +7,3 @@ for (i in 3..25) {
     val destination = File("challenges/Day$dayNumber.kt")
     template.copyTo(destination)
 }
-
-git change-commits GIT_COMMITTER_EMAIL "spearspa@gmail.com" "paralleldynamic@users.noreply.github.com"
