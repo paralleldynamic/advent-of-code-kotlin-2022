@@ -2,7 +2,7 @@ package challenges
 
 import utils.readInput
 
-const val challengeLabel: String = "Day03"
+private const val LABEL = "Day03"
 
 fun main() {
     fun part1(input: List<String>): Int {
@@ -14,8 +14,8 @@ fun main() {
     }
 
     // Reading input
-    val testInput = readInput("{$challengeLabel}_test")
-    val input = readInput(challengeLabel)
+    val testInput = readInput("{$LABEL}_test")
+    val input = readInput(LABEL)
 
     // Part 1
     check(part1(testInput) == 1)
