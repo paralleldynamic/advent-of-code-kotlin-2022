@@ -14,7 +14,7 @@ fun main() {
     }
 
     // Reading input
-    val testInput = readInput("{$LABEL}_test")
+    val testInput = readInput("${LABEL}_test")
     val input = readInput(LABEL)
 
     // Part 1
