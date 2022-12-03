@@ -2,6 +2,8 @@ package challenges
 
 import utils.readInput
 
+private const val LABEL = "Day19"
+
 fun main() {
     fun part1(input: List<String>): Int {
         return input.size
@@ -11,11 +13,15 @@ fun main() {
         return input.size
     }
 
-    // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
-    check(part1(testInput) == 1)
+    // Reading input
+    val testInput = readInput("${LABEL}_test")
+    val input = readInput(LABEL)
 
-    val input = readInput("Day01")
+    // Part 1
+    check(part1(testInput) == 1)
     println(part1(input))
+
+    // Part 2
+    check(part2(testInput) == 1)
     println(part2(input))
 }
